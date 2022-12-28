@@ -1,0 +1,73 @@
+/* Seccion portada*/
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 90%;
+    color: deepskyblue;
+    margin: 15px auto;
+    text-align: center;
+}
+h2{
+    font-family: 'Franklin Gothic bold', 'Arial Narrow', Arial, sans-serif;
+    width: 20%;
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+/* Seccion evolucion*/
+#evolucion{
+    width: 91%;
+    border-top: dashed yellow;
+    margin: 15px auto;
+}
+figure{
+    float: left;
+}
+figure img:hover{
+    transform: scale(1.2);
+}
+figure img{
+    padding: 3px;
+    background: grey;
+    border-radius: 18px;
+    transition: 0.3s ease-in-out 0.1s ;
+    box-shadow: grey 5px 5px 8px;
+}
+figcaption{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.0em;
+    margin-top: 5px;
+}
+
+/* Seccion informacion*/
+ #informacion{
+    width: 91%;
+    border-top: dashed yellow;
+    margin: 10px auto;
+ }
+#video{
+    display: grid;
+    place-items: center;
+}
+
+#video-jared{
+    width: 250px;
+    margin: 25px auto;
+    border: 5px solid black;
+    border-radius: 8px;
+}
+/* Seccion conocer*/
+#conocer{
+    width: 91%;
+    border-top: dashed yellow;
+    margin: 10px auto;
+}
+table{
+    text-align: center;
+    background-color: blanchedalmond;
+    width: 25%;
+    margin: auto;
+    border: 2px aquamarine dashed;
+}
+td{
+    padding: 15px;
+
+}

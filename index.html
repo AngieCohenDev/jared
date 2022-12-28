@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jared</title>
+    <script>
+        var imagen;
+        function llamarImagen(){
+            imagen=document.getElementsByTagName("img");
+            imagen.addEventListener("mouseover",crecer,false);
+            imagen.addEventListener("mouseout",menguar,false);      
+        }
+        function crecer(){
+            imagen.width=350;
+            imagen.heigth=350;
+        }
+        function menguar(){
+            imagen.width=280;
+            imagen.heigth=250;
+        }
+        window.addEventListener("load",llamarImagen,false);
+    </script>
+</head>
+<body>
+    <section id="portada">
+        <div id="titulo">
+            <h1>
+                Jared, su historia, vida y fotos que saque de Google fotos
+            </h1>
+            <h2>
+                Evolución 
+            </h2>
+        </div>
+    </section>
+      <section id="evolucion">
+        <figure>
+            <img src="css/imagenes/nacimiento.jpg" alt="nacimiento" width="280" height="250">
+                <figcaption>Jared David Paz Cohen nació un 28 de </figcaption>
+                <figcaption>Marzo del 2020. En época de pandemia.</figcaption>
+        </figure>
+        <figure>
+            <img src="css/imagenes/meses.jpg" alt="meses" width="280" height="250">
+                <figcaption>Una fotografia de Jared meses despues</figcaption>
+                <figcaption> de su nacimiento</figcaption>
+        </figure>
+        <figure>
+            <img src="css/imagenes/dia-playa.jpg" alt="palya" width="280" height="250">
+                <figcaption>Fotografía de Jared, celebrando el</figcaption>
+                <figcaption>cumpleaños #9 de su hermano, Jostin.</figcaption>
+        </figure>
+        <figure>
+            <img src="css/imagenes/bonito.jpg" alt="playa" width="280" height="250">
+                <figcaption>Este es Jared David, un día cualquiera </figcaption>
+                <figcaption>en su casa.</figcaption>
+        </figure>
+        <figure>
+            <img src="css/imagenes/Con-un-año.jpg" alt="edad" width="280" height="250">
+                <figcaption>Jared todo chiquito, todo bonito.</figcaption>
+        </figure>
+        <figure>
+            <img src="css/imagenes/escuela.jpg" alt="escuela" width="280" height="250">
+                <figcaption>Un recordatorio de Jared en la guardería.</figcaption>
+                <figcaption>Primera aproximación al mundo del conocimiento.</figcaption>
+                <figcaption> Como pueden observar no se portaba muy bien.</figcaption>
+        </figure>
+        <figure>
+            <img src="css/imagenes/imagen de jared.jpg" alt="jared" width="280" height="250">
+                <figcaption>Un recordatorio de la vez en que Jared</figcaption>
+                <figcaption>salió al mall y casi roba en "miniso"</figcaption>
+        </figure>
+        <figure>
+            <img src="css/imagenes/navidad.jpg" alt="navida" width="280" height="250">
+                <figcaption>Jared en la navidad de 2022</figcaption>
+        </figure>
+    </section>
+        <h2>Informacion</h2>
+    <section id="informacion">
+    
+        <p>Ahora pondre un pequeño video para que vayan conociendo a Jared y conozcan lo mucho que le gustaba "La gallina turuleca"</p>
+        <div id="video">
+            <video id="video-jared" src="css/imagenes/video de jared.mp4" controls></video>
+        </div>
+        <p>Bueno, aquí voy a poner un texto bien random para ir rellenando espacio en lo que se me ocurre algo más</p>
+    </section>
+    <h2>Conocer a Jared</h2>
+    <section id="conocer">
+        <p>Para conocer al personaje Jared David, por favor, llene el formulario a continuación</p>
+        <form name="datos_user" method="get">
+            <table> 
+             <tr>
+                 <td>
+                    Usuario <input pattern="[A-Za-z]{3}" name="usuario" id="user" maxlength="10" required>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     Email <input type="email" name="micorreo" id="micorreo" required>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     Edad <input type="range" name="edad" id="edad" min="0" max="120" value="30" step="30">
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <output id="rango">0 a 30</output>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <input type="submit" id="enviar" value="Registrar" >
+                 </td>
+             </tr>
+ </table>
+ </form>
+
+    </section>
+
+</body>
+</html>
