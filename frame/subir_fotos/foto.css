@@ -1,0 +1,24 @@
+#contenedor{
+    width: 92%;
+    margin: auto;
+    position: relative;
+}
+#zona-formulario{
+    float: left;
+    padding: 30px;
+    border: 1px solid springgreen;
+    margin-bottom: 2%;
+    width: 40%;
+    
+}
+#zona-datos{
+    float: left;
+    width: 75%;
+    padding: 20px;
+    border: 2px dashed red;
+}
+.directorio{
+    color: aqua;
+    font-weight: bold;
+    cursor: pointer;
+}

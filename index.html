@@ -6,23 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Jared</title>
-    <script>
-        var imagen;
-        function llamarImagen(){
-            imagen=document.getElementsByTagName("img");
-            imagen.addEventListener("mouseover",crecer,false);
-            imagen.addEventListener("mouseout",menguar,false);      
-        }
-        function crecer(){
-            imagen.width=350;
-            imagen.heigth=350;
-        }
-        function menguar(){
-            imagen.width=280;
-            imagen.heigth=250;
-        }
-        window.addEventListener("load",llamarImagen,false);
-    </script>
+    <script src="./js/informacion.js"></script>
 </head>
 <body>
     <section id="portada">
@@ -83,7 +67,26 @@
         <div id="video">
             <video id="video-jared" src="css/imagenes/video de jared.mp4" controls></video>
         </div>
-        <p>Bueno, aquí voy a poner un texto bien random para ir rellenando espacio en lo que se me ocurre algo más</p>
+        <div id="audio">
+            <h3>Conozcan la voz de Jared </h3>
+            <audio src="./css/imagenes/Jares_audio.opus" controls></audio>
+            <p>Este es un audio de Jared del dia 4 de diciembre de 2022, por primera vez dijo 
+               “tía” porque el señorito ya había dicho “mamá”, “papá”, “guela”,”guelo”, “Jey” 
+               pero nada que decia “tia”. El cómo que no tiene tia.</p>
+        </div>   
+    </section>
+    <h2>Geolocalizacion</h2>
+    <section id="ubicacion">
+        <iframe src="./frame/localizar/miUbicacion.html" width="850" height="240" frameborder="0"></iframe>
+    </section>
+    <h2>Tu foto favorita</h2>
+    <section id="subir_archivo">
+        <p>Para esta sección, te pedimos que subass tu imagen favorita de la estrella Jared David</p>
+        <iframe src="./frame/subir_fotos/foto.html" width="850" height="600" frameborder="0"></iframe>
+    </section>
+    <h2>Descarga tu video inédito</h2>
+    <section id="descarga">
+        <iframe src="./frame/descarga/descargar_video.html" width="850" height="600" frameborder="0"></iframe>
     </section>
     <h2>Conocer a Jared</h2>
     <section id="conocer">
@@ -92,8 +95,13 @@
             <table> 
              <tr>
                  <td>
-                    Usuario <input pattern="[A-Za-z]{3}" name="usuario" id="user" maxlength="10" required>
+                    Nombre <input type="text" name="nombre" id="user" required>
                  </td>
+             </tr>
+             <tr>
+                <td>
+                    Apellido <input type="text" name="Apellido" id="apellido">
+                </td>
              </tr>
              <tr>
                  <td>
@@ -102,12 +110,7 @@
              </tr>
              <tr>
                  <td>
-                     Edad <input type="range" name="edad" id="edad" min="0" max="120" value="30" step="30">
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <output id="rango">0 a 30</output>
+                     Fecha de nacimiento <input type="date" name="edad" id="edad">
                  </td>
              </tr>
              <tr>
