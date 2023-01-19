@@ -2,7 +2,7 @@ function comenzar(){
     zonadatos=document.getElementById("zonadatos");
     zonaprogreso=document.getElementById("zona-progreso");
     var boton=document.getElementById("boton");
-    boton.addEventListener("click",mostrar,false);
+    boton.addEventListener("click",leer,false);
 }
 function leer(){
     var url="jared_video.mp4";
@@ -20,7 +20,7 @@ function estado_barra(e){
     var porcentaje=parseInt(e.loaded/e.total*100);
     var barraprogreso=zonadatos.querySelector("progress");
     barraprogreso.value=porcentaje;
-    zonaprogreso.innerHTML=porcentaje + " %";
+    zonaprogreso.innerHTML=porcentaje + " % ";
 }
 function mostrar(e){
     zonadatos.innerHTML="Archivo leido!!!";
