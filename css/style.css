@@ -50,7 +50,7 @@ figcaption{
 }
 
 #video-jared{
-    width: 250px;
+    width: 20%;
     margin: 25px auto;
     border: 5px solid black;
     border-radius: 8px;
@@ -92,6 +92,40 @@ p{
     font-size: 1.0em;
     margin-top: 5px;
 }
-/*descargar*/
-
+/*parte responsiva*/
+@media (min-width: 300px) and (max-width:800px){
+    h2{
+       width: 60%;
+    }
+    #portada{
+        width: 80%;
+        padding: 4%;
+    }
+    #evolucion{
+        width:85%;
+        display: inline-block;
+        padding-left: 3%;
+        
+    }
+    figure{
+        flex-direction: column;
+        margin: 3%;
+    }
+    #informacion p{
+        width: 85%;
+    }
+    #video{
+        display: flex;
+    }
+    #video-jared{
+        width: 60%;
+        margin: 3%;
+    }
+    #audio{
+        width: 90%;
+    }
+    #subir_archivo p{
+        width: 82%;
+    }
+}
 

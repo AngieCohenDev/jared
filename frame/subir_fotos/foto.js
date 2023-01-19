@@ -24,6 +24,6 @@ function procesar(e){
 function mostrar_web(e){
     var resultado=e.target.result;
 
-    zonadatos.innerHTML+="<img src='" + resultado + "' width='40%'>";
+    zonadatos.innerHTML+="<img src='" + resultado + "' width='60%'>";
 }
 window.addEventListener("load",comenzar,false);

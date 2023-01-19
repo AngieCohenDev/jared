@@ -13,7 +13,7 @@
 }
 #zona-datos{
     float: left;
-    width: 75%;
+    width: 50%;
     padding: 20px;
     border: 2px dashed red;
 }
@@ -21,4 +21,14 @@
     color: aqua;
     font-weight: bold;
     cursor: pointer;
+}
+/* RESPONSIVE*/
+@media (min-width: 300px) and (max-width:800px){
+#zona-formulario{
+    width: 100%;
+}
+#zona-datos{
+    width: 95%;
+    height: 50%;
+}
 }
